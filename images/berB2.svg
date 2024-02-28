@@ -1,0 +1,11 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>Layer 1</title>
+  <path stroke="#000" id="svg_5" d="m118.44499,195.51408l165.98538,0l88.01462,102.50001l-88.01462,106.5l-165.98538,0l0,-209.00002z" fill="#000000"/>
+  <text font-style="normal" font-weight="normal" transform="matrix(4.38085 0 0 6.44982 -540.439 -1465.3)" stroke="#000" xml:space="preserve" text-anchor="start" font-family="'Assistant'" font-size="24" stroke-width="0" id="svg_13" y="282.33054" x="150.83767" fill="#ffffff">BER</text>
+  <path stroke="#000" id="svg_15" d="m324.13001,194.99998l280.37826,0l23.62175,101.99978l-23.62175,106.00024l-280.37826,0l82.0937,-100.00024l-82.0937,-107.99978z" fill="#8CD79F"/>
+  <text transform="rotate(0.107179 507.923 298.309) matrix(7.02717 0 0 6.41309 -2597.56 -1095.71)" stroke="#000" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Assistant'" font-size="24" stroke-width="0" id="svg_17" y="226.21522" x="429.00028" fill="#ffffff">B2</text>
+  <path id="svg_18" d="m-146,142" opacity="NaN" stroke-width="0" stroke="#000" fill="#ffffff"/>
+ </g>
+</svg>
