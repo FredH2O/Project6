@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="F.Huertas">
+    <meta name="keywords" content="house, property, land">
+    <meta name="description" content="House, Apartment and land for sale">
+    <title>Home Shopping</title>
+    <link rel="stylesheet" href="dist/simple-lightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="SlickNav/slicknav.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logoSample.svg" id="logo" alt="Logo">
+        <ul id="menu">
+
+            <li class="drop-down-container">
+                <a href="#">Find a Property</a>
+                <ul class="drop-down-list">
+                    <li><a href="#">Residential</a></li>
+                    <li><a href="#">New Homes</a></li>
+                    <li><a href="#">Commercial</a></li>
+                </ul>
+            </li>
+
+            <li class="drop-down-container">
+                <a href="#">Services</a>
+                <ul class="drop-down-list">
+                    <li><a href="#">Guide to Buying</a></li>
+                    <li><a href="#">Guide to Selling</a></li>
+                    <li><a href="#">Market Soundings</a></li>
+                    <li><a href="#">Rental Yield Calculator</a></li>
+                </ul>
+            </li>
+
+            <li class="drop-down-container">
+                <a href="#">About</a>
+                <ul class="drop-down-list">
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Franchise Opportunity</a></li>
+                </ul>
+            </li>
+
+            <li class="drop-down-container">
+                <a href="#">Contact</a>
+                <ul class="drop-down-list">
+                    <li><a href="#">Branch Finder</a></li>
+                    <li><a href="#">Find a Person</a></li>
+                    <li><a href="#">Request a Valuation</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </header>
+    <nav>
+        <ul>
+            <li class="drop-down-container2">
+                <label for="type">Type</label>
+                <select id="type">
+                    <option value="All Properties">All Properties</option>
+                    <option value="Apartment">Apartment</option>
+                    <option value="House">House</option>
+                    <option value="Site">Site</option>
+                    <option value="Investment">Investment</option>
+                    <option value="Farm">Farm</option>
+                </select>
+            </li>
+
+            <li class="drop-down-container2">
+                <label for="style">Style</label>
+                <select id="style">
+                    <option value="All">All</option>
+                    <option value="Detached">Detached</option>
+                    <option value="End Terrace">End Terrace</option>
+                    <option value="Mews">Mews</option>
+                    <option value="Semi-Detached">Semi-Detached</option>
+                    <option value="Penthouse">Penthouse</option>
+                    <option value="Studio">Studio</option>
+                </select>
+            </li>
+
+            <li class="drop-down-container2">
+                <form action="#" method="get" name="buy-rent-location" autocomplete="on">
+                    <input type="radio" id="Buy" name="Buy-or-Rent" value="Buy">
+                    <label for="Buy">Buy</label>
+                    <input type="radio" id="Rent" name="Buy-or-Rent" value="Rent">
+                    <label for="Rent">Rent</label>
+                    <input type="search" id="search" name="search" placeholder="Location or Address">
+                    <!-- javascript test / try-->
+
+                    <p>Price:</p>
+                    <input class="range-bar" type="range" min="100000" max="5000000" value="25000"
+                        oninput="rangeValue.innerText = this.value">
+                    <p>€</p>
+                    <p id="rangeValue">100000</p>
+
+                    <p>Rooms?</p>
+                    <input class="range-bar" type="range" min="1" max="10" value="5"
+                        oninput="bedValue.innerText = this.value">
+                    <p id="bedValue">5</p>
+
+                    <input id="submit-button" type="Submit" value="Submit">
+                </form>
+            </li>
+
+        </ul>
+    </nav>
+    <section>
+
+        <!-- Properties for Sale start here //-->
+
+        <div class="sort-div-container">
+            <h1>Properties For Sale</h1>
+            <select class="sort-housing">
+                <option value="">Most Recent</option>
+                <option value="">Highest Price</option>
+                <option value="">Lowest Price</option>
+            </select>
+        </div>
+
+        <div class="grid-main-container">
+
+            <div class="grid-div gallery">
+                <figure>
+                    <a href="images/house1.jpg" class="" rel="rel1">
+                        <img src="images/house1.jpg" class="property-image" alt="">
+                    </a>
+                    <a href="images/living-room1.jpg" class="no-display-images" rel="rel1">
+                        <img src="images/living-room1.jpg" class="property-image" alt="">
+                    </a>
+                    <figcaption>
+                        <h3><a href="#">17 Roselawn Park, Tughall Road, Bray, Co. Wicklow, A25E2Y2</a></h3>
+                        <p>HSN has the pleasure to present No. 17 Roselawn Park to the market. Rarely does the
+                            opportunity arise to purchase one of these... <br><a href="#">Read More <i
+                                    class="ti ti-circle-arrow-down-right-filled"></i></a></p>
+                        <div class="house-info">
+                            <p style="color: crimson; font-weight: bold; -webkit-text-stroke: 0.2px black;">€180,205</p>
+                            <p><i class="ti ti-bed"></i> 4</p>
+                            <p><i class="ti ti-bath"></i> 3</p>
+                            <p><i class="ti ti-sofa"></i> 1</p>
+                            <p><i class="ti ti-cube"></i>90 &#13217; </p>
+                            <p><span class="ber-icon">BER</span><span class="rating3">A3</span></p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="grid-div gallery">
+                <figure>
+                    <a href="images/house2.jpg" class="" rel="rel2">
+                        <img src="images/house2.jpg" class="property-image" alt="">
+                    </a>
+                    <a href="images/living2.jpg" class="no-display-images" rel="rel2">
+                        <img src="images/living2.jpg" alt="">
+                    </a>
+                    <figcaption>
+                        <h3><a href="#">8 Clontarf Road, Clontarf, Dublin 3, D03E1D1</a></h3>
+                        <p>*** OPEN VIEW FRIDAY 1ST MARCH 5-5.30PM *** HSN are delighted to represent the sale of 8
+                            Clontarf Road, Clontarf, a stunning ... <br><a href="#">Read More <i
+                                    class="ti ti-circle-arrow-down-right-filled"></i></a></p>
+                        <div class="house-info">
+                            <p style="color: crimson; font-weight: bold; -webkit-text-stroke: 0.2px black;">€380,000</p>
+                            <p><i class="ti ti-bed"></i> 3</p>
+                            <p><i class="ti ti-bath"></i> 2</p>
+                            <p><i class="ti ti-sofa"></i> 2</p>
+                            <p><i class="ti ti-cube"></i>95 &#13217;</p>
+                            <p><span class="ber-icon">BER</span><span class="rating">B3</span></p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="grid-div gallery">
+                <figure>
+                    <a href="images/house3.jpg" class="" rel="rel3">
+                        <img src="images/house3.jpg" class="property-image" alt="">
+                    </a>
+                    <a href="images/living3.jpg" class="no-display-images" rel="rel3">
+                        <img src="images/living3.jpg" alt="">
+                    </a>
+                    <figcaption>
+                        <h3><a href="#">12 Rathcurragh, Green Road, Newbridge, Co. Kildare, W12GS12</a></h3>
+                        <p>HSN Doyle are delighted to welcome you to, No. 12 Rathcurragh, a beautiful 3 bed home. The
+                            spacious family home is... <br><a href="#">Read More <i
+                                    class="ti ti-circle-arrow-down-right-filled"></i></a></p>
+                        <div class="house-info">
+                            <p style="color: crimson; font-weight: bold; -webkit-text-stroke: 0.2px black;">€200,000</p>
+                            <p><i class="ti ti-bed"></i> 3</p>
+                            <p><i class="ti ti-bath"></i> 2</p>
+                            <p><i class="ti ti-sofa"></i> 1</p>
+                            <p><i class="ti ti-cube"></i>105 &#13217;</p>
+                            <p><span class="ber-icon">BER</span><span class="rating2">C3</span></p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="grid-div gallery">
+                <figure>
+                    <a href="images/house4.jpg" class="" rel="rel4">
+                        <img src="images/house4.jpg" class="property-image" alt="">
+                    </a>
+                    <a href="images/living4.jpg" class="no-display-images" rel="rel4">
+                        <img src="images/living4.jpg" class="property-image" alt="">
+                    </a>
+                    <figcaption>
+                        <h3><a href="#">18 An Duiche, Scallagheen, Co Tipperary, E12TR21</a></h3>
+                        <p>HSN O'Callaghan Auctioneers are delighted to offer for sale this superbly located 5 bed
+                            residence with the benefit of... <br><a href="#">Read More <i
+                                    class="ti ti-circle-arrow-down-right-filled"></i></a></p>
+                        <div class="house-info">
+                            <p style="color: crimson; font-weight: bold; -webkit-text-stroke: 0.2px black;">€425,000</p>
+                            <p><i class="ti ti-bed"></i> 5</p>
+                            <p><i class="ti ti-bath"></i> 3</p>
+                            <p><i class="ti ti-sofa"></i> 3</p>
+                            <p><i class="ti ti-cube"></i>125 &#13217;</p>
+                            <p><span class="ber-icon">BER</span><span class="rating">B2</span></p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="grid-div gallery">
+                <figure>
+                    <a href="images/apartment.jpg" class="" rel="rel5">
+                        <img src="images/apartment.jpg" class="property-image" alt="">
+                    </a>
+                    <a href="images/apart-living.jpg" class="no-display-images" rel="rel5">
+                        <img src="images/apart-living.jpg" class="property-image" alt="">
+                    </a>
+                    <figcaption>
+                        <h3><a href="#">Apartment 2, Azure Blanc House, Rathmines, Dublin 6,</a></h3>
+                        <p>HSN Gillespie Lowe Lettings are proud to present Azure Blanc House, this stunning fully
+                            refurbished exclusive apartment in the... <br><a href="#">Read More <i
+                                    class="ti ti-circle-arrow-down-right-filled"></i></a></p>
+                        <div class="house-info">
+                            <p style="color: crimson; font-weight: bold; -webkit-text-stroke: 0.2px black;">€2,500 PCM
+                            </p>
+                            <p><i class="ti ti-bed"></i> 1</p>
+                            <p><i class="ti ti-bath"></i> 1</p>
+                            <p><i class="ti ti-sofa"></i> 1</p>
+                            <p><i class="ti ti-cube"></i>40 &#13217;</p>
+                            <p><span class="ber-icon">BER</span><span class="rating2">D</span></p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="grid-div gallery">
+                <figure>
+                    <a href="images/house5.jpg" class="" rel="rel6">
+                        <img src="images/house5.jpg" class="property-image" alt="">
+                    </a>
+                    <a href="images/living5.jpg" class="no-display-images" rel="rel6">
+                        <img src="images/living5.jpg" class="property-image" alt="">
+                    </a>
+                    <figcaption>
+                        <h3><a href="#">1 Na Crossaire, Kilmyshall, Bunclody, Co Wexford, Y12D233</a></h3>
+                        <p>Located in the very popular village of Kilmyshall, No. 1 Na Crossaire is a very
+                            well-presented family home which comes to the mark... <br><a href="#">Read More <i
+                                    class="ti ti-circle-arrow-down-right-filled"></i></a></p>
+                        <div class="house-info">
+                            <p style="color: crimson; font-weight: bold; -webkit-text-stroke: 0.2px black;">€240,000</p>
+                            <p><i class="ti ti-bed"></i> 4</p>
+                            <p><i class="ti ti-bath"></i> 3</p>
+                            <p><i class="ti ti-sofa"></i> 2</p>
+                            <p><i class="ti ti-cube"></i>120 &#13217;</p>
+                            <p><span class="ber-icon">BER</span><span class="rating3">A1</span></p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="grid-div gallery">
+                <figure>
+                    <a href="images/house6.jpg" class="" rel="rel7">
+                        <img src="images/house6.jpg" class="property-image" alt="">
+                    </a>
+                    <a href="images/living6.jpg" class="no-display-images" rel="rel7">
+                        <img src="images/living6.jpg" class="property-image" alt="">
+                    </a>
+                    <figcaption>
+                        <h3><a href="#">Ballintleva, Rossaveel, Galway, H91W4CY</a></h3>
+                        <p>HSN Martha O'Connor Estate Agents are delighted to offer for sale this wonderful and most
+                            unique opportunity to purchase a... <br><a href="#">Read More <i
+                                    class="ti ti-circle-arrow-down-right-filled"></i></a></p>
+                        <div class="house-info">
+                            <p style="color: crimson; font-weight: bold; -webkit-text-stroke: 0.2px black;">€165,000</p>
+                            <p><i class="ti ti-bed"></i> 3</p>
+                            <p><i class="ti ti-bath"></i> 2</p>
+                            <p><i class="ti ti-sofa"></i> 1</p>
+                            <p><i class="ti ti-cube"></i>75.2 &#13217;</p>
+                            <p><span class="ber-icon">BER</span><span class="rating4">G</span></p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="grid-div gallery">
+                <figure>
+                    <a href="images/house7.jpg" class="" rel="rel8">
+                        <img src="images/house7.jpg" class="property-image" alt="">
+                    </a>
+                    <a href="images/living8.jpg" class="no-display-images" rel="rel8">
+                        <img src="images/living8.jpg" class="property-image" alt="">
+                    </a>
+                    <figcaption>
+                        <h3><a href="#">22 Sylvan Drive, Fairlands Park, Newcastle, Co. Galway, H91DWS1</a></h3>
+                        <p>** VIRTUAL TOUR AVAILABLE ** An exceptionally located four bed detached residence comes to
+                            market with HSN Maxowelle, Heashslip... <br><a href="#">Read More <i
+                                    class="ti ti-circle-arrow-down-right-filled"></i></a></p>
+                        <div class="house-info">
+                            <p style="color: crimson; font-weight: bold; -webkit-text-stroke: 0.2px black;">€550,000</p>
+                            <p><i class="ti ti-bed"></i> 6</p>
+                            <p><i class="ti ti-bath"></i> 3</p>
+                            <p><i class="ti ti-sofa"></i> 2</p>
+                            <p><i class="ti ti-cube"></i>155 &#13217;</p>
+                            <p><span class="ber-icon">BER</span><span class="rating3">A2</span></p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="grid-div gallery">
+                <figure>
+                    <a href="images/house8.jpg" class="" rel="rel9">
+                        <img src="images/house8.jpg" class="property-image" alt="">
+                    </a>
+                    <a href="images/living7.jpg" class="no-display-images" rel="rel9">
+                        <img src="images/living7.jpg" class="property-image" alt="">
+                    </a>
+                    <figcaption>
+                        <h3><a href="#">541 Merville Avenue, Fairview, Dublin 3, D03H1N1</a></h3>
+                        <p>HSN are delighted to represent the sale of No. 541 Merville Avenue, Fairview, a very
+                            attractive end of terrace family home... <br><a href="#">Read More <i
+                                    class="ti ti-circle-arrow-down-right-filled"></i></a></p>
+                        <div class="house-info">
+                            <p style="color: crimson; font-weight: bold; -webkit-text-stroke: 0.2px black;">€260,000</p>
+                            <p><i class="ti ti-bed"></i> 2</p>
+                            <p><i class="ti ti-bath"></i> 2</p>
+                            <p><i class="ti ti-sofa"></i> 1</p>
+                            <p><i class="ti ti-cube"></i>90 &#13217;</p>
+                            <p><span class="ber-icon">BER</span><span class="rating5">E1</span></p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="load-more-container">
+            <button type="button" class="button-load-more">
+                LOAD MORE
+            </button>
+        </div>
+    </section>
+    <article>
+        <h2>BROWSE PROPERTIES IN IRELAND</h2>
+        <div>
+            <ul>
+                <li><a href="#">1 Bedroom property for sale in Ireland</a></li>
+                <li><a href="#">2 Bedrooms property for sale in Ireland</a></li>
+                <li><a href="#">3 Bedrooms property for sale in Ireland</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Apartment for sale in Ireland</a></li>
+                <li><a href="#">Houses for sale in Ireland</a></li>
+                <li><a href="#">Farms for sale in Ireland</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Property for sale in Co. Carlow</a></li>
+                <li><a href="#">Property for sale in Co. Cork</a></li>
+                <li><a href="#">Property for sale in Co. Dublin</a></li>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <ul>
+            <li><a href="#"><i class="ti ti-brand-twitter-filled"></i> Twitter</a></li>
+            <li><a href="#"><i class="ti ti-brand-facebook-filled"></i> Facebook</a></li>
+            <li><a href="#"><i class="ti ti-brand-instagram"></i> Instagram</a></li>
+        </ul>
+
+        <p>&copy; HNS Group Limited. All Rights Reserved</p>
+        <p>Site By <i class="ti ti-code"></i> F.Huertas</p>
+
+        <!--  jQuery Plugin Here // -->
+        <script src="dist/simple-lightbox.jquery.min.js"></script>
+        <script src="SlickNav/jquery.slicknav.min.js"></script>
+        <script>
+            var gallery = new SimpleLightbox('.gallery a',
+                {
+                    animationSpeed: 400,
+                    fadeSpeed: 800,
+                    scaleImageToRatio: true,
+                });
+            $(function () {
+                $('#menu').slicknav();
+            });
+        </script>
+    </footer>
+</body>
+
+</html>
